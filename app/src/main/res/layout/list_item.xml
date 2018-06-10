@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_margin="@dimen/appbar_padding_top"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txt_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left|center"
+        android:layout_weight="5"
+        android:ellipsize="marquee"
+        android:text="Description"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/textViewTextSizeMedium" />
+
+
+
+    <TextView
+        android:id="@+id/txt_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|center"
+        android:layout_weight="5"
+        android:lines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/textViewTextSizeMedium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray" />
+
+
+</RelativeLayout>

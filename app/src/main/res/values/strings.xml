@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Book Ride</string>
+    <string name="tab_ride">BOOK RIDES</string>
+    <string name="tab_history">HISTORY</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="google_key">AIzaSyD90q4Ev-cjWxqhNj2dzjDr3fN9P-r9naI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="let_s_go">Let\'s go!</string>
+    <string name="cancel">Cancel</string>
+    <string name="pickup_search">Pickup Search</string>
+    <string name="drop_search">Drop Search</string>
+    <string name="booking_model">bookingModel</string>
+</resources>

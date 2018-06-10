@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context=".fragments.MapsFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="90">
+
+        <fragment
+            android:id="@+id/pickup_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/drop_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map_fragment"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@color/light_gray"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+
+        <Button
+            android:id="@+id/btn_sedan"
+            android:layout_width="@dimen/buttonWidthSmall"
+            android:layout_height="@dimen/buttonHeightSmall"
+            android:background="@drawable/button_left_round"
+            android:text="Sedan" />
+
+        <Button
+            android:id="@+id/btn_hatchback"
+            android:layout_width="@dimen/buttonWidthSmall"
+            android:layout_height="@dimen/buttonHeightSmall"
+            android:background="@drawable/button_centre"
+            android:text="Hatchback" />
+
+        <Button
+            android:id="@+id/btn_suv"
+            android:layout_width="@dimen/buttonWidthSmall"
+            android:layout_height="@dimen/buttonHeightSmall"
+            android:background="@drawable/button_right_round"
+            android:text="SUV" />
+    </LinearLayout>
+
+</LinearLayout>
